@@ -11,7 +11,7 @@ mongoose
     useUnifiedTopology: true,
   })
   .then(() => console.log("Connected to MongoDB"))
-  .catch(() => console.error(err));
+  .catch((err) => console.error(err));
 const userSchema = new mongoose.Schema({
   name: String,
   skills: [String],
