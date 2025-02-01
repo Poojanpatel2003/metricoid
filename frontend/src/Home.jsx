@@ -4,7 +4,7 @@ import axios from "axios";
 const Home = () => {
     const [user,setUser]=useState(null);
     useEffect(()=>{
-        axios.get('http://localhost:5001/api/user').then(response=>setUser(response.data)).catch(error=>console.log(error))
+        axios.get('https://metricoid-vwzb.onrender.com/api/user').then(response=>setUser(response.data)).catch(error=>console.log(error))
     },[])
     return (
         <div>
